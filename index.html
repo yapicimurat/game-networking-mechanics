@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Network Simulasyonu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="client-view">
+            <h2>Client Görünümü</h2>
+            <canvas id="clientCanvas"></canvas>
+            <div class="info">
+                <p>Client Pozisyon: <span id="clientPosition">x: 0, y: 0</span></p>
+                <p>Input Sequence: <span id="inputSequence">0</span></p>
+            </div>
+        </div>
+        <div class="server-view">
+            <h2>Server Görünümü</h2>
+            <canvas id="serverCanvas"></canvas>
+            <div class="info">
+                <p>Server Pozisyon: <span id="serverPosition">x: 0, y: 0</span></p>
+                <p>Son İşlenen Sequence: <span id="lastProcessedSequence">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="controls" style="position: absolute; top: 10px; right: 40px;">
+        <button id="startSimulation">Simülasyonu Başlat</button>
+        <button id="addLatency">Gecikme Ekle (100ms)</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
