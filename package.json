@@ -1,0 +1,16 @@
+{
+  "name": "game-networking-mechanics",
+  "version": "1.0.0",
+  "description": "![alt text](network-arch.png \"Network\")",
+  "type": "module",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
